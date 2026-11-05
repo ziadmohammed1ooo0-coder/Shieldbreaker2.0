@@ -13,7 +13,7 @@ public class ShieldBreakerClient implements ClientModInitializer {
     private static KeyBinding shieldBreakKey;
     private static boolean breaking = false;
     private static int returnSlot = 0;
-    private static int axeSlot = 7;
+    private static int axeSlot = 1;
     private static int clickDelay = 2;
     private static int clickTimer = 0;
 
@@ -43,7 +43,7 @@ public class ShieldBreakerClient implements ClientModInitializer {
                 clickTimer = 0;
             }
 
-            if (clickTimer <= 2) {
+            if (clickTimer <= 0) {
                 client.doAttack();
                 clickTimer = clickDelay;
             } else {
