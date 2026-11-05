@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "shieldbreaker",
+  "version": "${version}",
+  "name": "Shield Breaker",
+  "description": "Hold R to swap to your axe, spam-click to break shields, release to swap back.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.shieldbreaker.ShieldBreakerClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.x"
+  }
+}
